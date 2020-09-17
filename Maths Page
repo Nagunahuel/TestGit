@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>Maths Website</title>
+       <meta name="viewport" content="widht=device-widht, initial-scale = 1.0, user-scalable = yes">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+	
+	<style>
+	body{
+    font: Arial, Helvetica, sans-serif;
+}
+
+
+
+#container{
+    width: 1000px;
+    height: auto;
+    /*border: 1px solid grey;*/
+    margin: 0 auto;
+}
+
+#header{
+    height: 100px;
+    padding: 10px 0px;
+}
+
+#brand{
+float: left
+}
+
+h1 a{
+   font-size: 50px;
+   font-weight:100;
+    color:  #861BBF;
+    text-decoration: none   
+}
+   
+#searchbox{
+    float: right;
+    background:  linear-gradient(#E4F2B9,#B7E953);
+    background:  -webkit-linear-gradient(#E4F2B9,#B7E953);
+    background:  -o-linear-gradient(#E4F2B9,#B7E953);
+    background:  -moz-linear-gradient(#E4F2B9,#B7E953);
+    width: 400px;
+    height: 50px; 
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+}
+
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #fc9c0c; 
+    background: white url(images/search.png) right center no-repeat; 
+    border: 1px solid #C8D03E
+}
+
+.submit{
+    float: right;
+    padding: 4px;
+    font-weight: bold;
+    color: whitesmoke;
+    background: #AF61DD;
+    font-size: 15px;  
+}
+
+.clear{
+    clear: both;
+}
+
+#menu{
+   height: 70px;
+   background: linear-gradient(#FAEE89,#D9CD35);
+   background: -webkit-linear-gradient(#FAEE89,#D9CD35); 
+   background: -o-linear-gradient(#FAEE89,#D9CD35);
+   background: -moz-linear-gradient(#FAEE89,#D9CD35); 
+   padding: 7px 0px;   
+}
+
+ul{
+ list-style: none;   
+}
+
+#menu ul li {
+    float: left;
+    padding: 0px 30px;  
+    height: 30px;
+    border-right: 1px solid  #5d12e7;    
+}
+
+#menu ul li:last-child {
+    border-right: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #5d12e7;
+    line-height: 30px;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight:bold;
+    color: #B314DB;
+}
+
+#introduction{
+    background: linear-gradient(#E5EDB8,#BEDE5F);
+    background: -webkit-linear-gradient(#E5EDB8,#BEDE5F);
+    background: -o-linear-gradient(#E5EDB8,#BEDE5F);
+    background: -moz-linear-gradient(#E5EDB8,#BEDE5F);
+    padding: 30px;
+    margin: 16px 0px;   
+}
+
+#introduction h3{
+    font-size: 45px;
+    color: #667722;
+    font-weight: normal;
+}
+
+#introduction p{
+    font-size: 25px;
+    color: #668822;
+    text-align: justify;
+    
+}
+
+.sidebar{
+    height: 500px;
+    width: 400px;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+}
+
+
+.sidebar h3{
+    font-size: 30px;
+    color: #AE68D0;
+}
+
+#leftsidebar ul{
+    padding-top: 5px  
+}
+
+#leftsidebar ul li {
+    padding: 4px 0 4px 10px;
+    list-style-image:url(images/arrow.png);
+   
+}
+
+#rightsidebar ul{
+    padding-top: 5px
+    
+}
+
+#rightsidebar ul li{
+    padding: 17px 0 17px 60px;
+    background: url(images/tick.png) no-repeat left center
+   
+   
+    
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #5d12e7;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+
+    
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #B314DB;
+    font-size: 23px;   
+}
+
+#leftsidebar{
+    float: left;
+    
+}
+
+#rightsidebar{
+    float: right;
+    
+}
+
+.footer{
+    height: 60px;
+    background: linear-gradient(#FCEF91,#E7DC73);
+    background: -webkit-linear-gradient(#FCEF91,#E7DC73);
+    background: -o-linear-gradient(#FCEF91,#E7DC73);
+    background: -moz-linear-gradient(#FCEF91,#E7DC73);
+    padding: 10px 30px;
+    margin-top: 15px;
+	
+	</style>
+     
+    
+    <body>
+        <div id="container">
+            <div id="header">
+                <div id="brand"><h1><a href="#">Maths the Fun Way</a></h1>
+                
+                </div>
+                <div id="searchbox">
+                    <form method="get">
+                        <input type="text" class="text">
+                        <input type="Submit" value="Search a Topic" class="submit">
+                    
+                    </form>
+                
+                </div>
+                <div class="clear">
+                
+                </div>
+                
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#" class="active">Menu</a></li>
+                    <li><a href="#">Online Tutorials</a></li>
+                    <li><a href="#">Get a private Tutor</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                
+            </div>
+            <div id="introduction">
+                <h3>Do you need help with maths?</h3>
+                <p>Our website uses an interactive methodology of teaching Maths using the latest web technologies. Your learning experience with us is guaranteed to be intuitive and fun. You will have fun while learning. This is the secret of our outstading results. Check reviews from our students.</p>
+            
+            </div>
+            
+            <div id="leftsidebar" class="sidebar">
+                <h3>Go To: </h3>
+                <ul>
+                     <li><a href="#">Year 1 Free Lessons</a></li>
+                     <li><a href="#">Year 2 Free Lessons</a></li>
+                     <li><a href="#">Year 3 Free Lessons</a></li>
+                     <li><a href="#">Year 4 Free Lessons</a></li>
+                     <li><a href="#">Year 5 Free Lessons</a></li>
+                     <li><a href="#">Year 6 Free Lessons</a></li>
+                     <li><a href="#">Year 7 Free Lessons</a></li>
+                     <li><a href="#">Year 8 Free Lessons</a></li>
+                     <li><a href="#">Year 9 Free Lessons</a></li>
+                     <li><a href="#">Year 10 Free Lessons</a></li>
+                     <li><a href="#">Year 11 Free Lessons</a></li>
+                     <li><a href="#">Year 12 Free Lessons</a></li>
+
+                </ul>
+            </div>
+            
+            <div id="rightsidebar" class="sidebar">
+                <h3> Why Us?</h3>
+                  <ul>
+                     <li><a href="#">Our teachers are available any time.</a></li>
+                     <li><a href="#"> Available on Laptop, Tables  and Phones.</a></li>
+                     <li><a href="#">30 Days Money Back Guarantee.</a></li>
+                     <li><a href="#">Interactive Games for an Enjoyable Learning Experience.</a></li>
+                     <li><a href="#">Learn at Your Own Peace.</a></li>
+                    <li><a href="#">Complete Curriculum.</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <footer class="footer">
+            <div><p>Company Name. Copyright &copy; 2010 - 2015</p></div> </footer>
+        </div>  
+    
+    </body>
+
+</html>
